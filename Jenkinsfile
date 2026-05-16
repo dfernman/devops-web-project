@@ -39,7 +39,7 @@ pipeline {
 
         stage('run container') {
             steps {
-                sh 'docker run -d --name devops-web-project-server --label devops-web-project-server -p 8081:8080 dfernman/devops-web-project:v1'
+               sh 'docker run -d --name devops-web-project-server --label devops-web-project-server -p 8082:8080 dfernman/devops-web-project:v1'
             }
         }
     }
